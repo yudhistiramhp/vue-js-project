@@ -191,10 +191,10 @@ const addNewRecipe = async () => {
             id: route.params.id,
             newRecipe: recipeData.value,
         });
-        router.push("/"); // Arahkan ke halaman utama setelah berhasil mengedit
+        router.push("/"); 
     } else {
         await store.dispatch("recipe/addNewRecipe", recipeData.value);
-        router.push("/"); // Arahkan ke halaman utama setelah berhasil menambah resep baru
+        router.push("/"); 
     }
 };
 
